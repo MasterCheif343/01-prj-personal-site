@@ -1,32 +1,144 @@
 body{
   margin: 0;
 
+  font-size: 20px;
+
   min-height: 100vh;
 
-  display: grid;
+  font-family: "Roboto", Tahoma, sans-serif;
 
-  place-items: center;
+  background: linear-gradient(to bottom, #1976d2, #b3e5fc);
 
-  background: linear-gradient(to right, #2b71b8, #0cc057);
-
-  font-family: "Segoe UI", Tahoma, sans-serif;
+  background-attachment: fixed;
 }
 
-.TopIntro{
+.NavBar{
+  display: flex;
+
+  justify-content: center;
+
+  gap: 2rem;
+
+  padding: 1rem;
+
+  background-color: rgba(0, 0, 0, 0.342);
+}
+
+.NavBar a{
+  color: black;
+
+  text-decoration: none;
+
+  font-weight: bold;
+}
+
+.NavIcon{
+  margin-right: 0.4rem;
+}
+
+.NavBar a:hover{
+  text-decoration: underline;
+}
+
+.Top,
+.Bottom{
   text-align: center;
 
-  color: white;
+  color: rgb(255, 255, 255);
 
   padding: 2rem;
 
+  margin: 0 auto;
+
   border-radius: 12px;
-  
-  background: url("img/Elmhurst Background.jpg") no-repeat center center;
+}
+
+.Top{
+  width: 80%;
+
+  min-height: 50vh;
+
+  box-sizing: border-box;
+
+  background: url("img/Tech Wallpaper.webp") no-repeat center center;
   background-size: cover;
 }
 
-.ProfilePic{
- width: 100px;
+
+
+.IntroBox{
+  max-width: 900px;
+
+  margin: 0 auto;
+
+  padding: 2rem;
+
+  box-sizing: border-box;
+
+  background-color: rgba(64, 192, 47, 0.651);
+
+  border-radius: 12px;
+}
+
+.BottomBox{
+  max-width: 900px;
+
+  margin: 0 auto;
+
+  padding: 2rem;
+
+  box-sizing: border-box;
+
+  background-color: rgba(64, 192, 47, 0.651);
+
+  border-radius: 12px;
+}
+
+.Top img,
+.Bottom img{
+  max-width: 100%;
+
+  height: auto;
+}
+
+.Programming.Languages,
+.New.Languages{
+  display: flex;
+
+  justify-content: center;
+
+  align-items: center;
+
+  gap: 1rem;
+
+  flex-wrap: wrap;
+}
+
+.Programming.Languages img,
+.New.Languages img{
+  width: 120px;
+
+  height: 120px;
+
+  object-fit: contain;
+}
+
+.CsharpLogo{
+  transform: scale(1.68);
+}
+
+.CssLogo{
+  transform: scale(1.15);
+}
+
+.JsLogo{
+  position: relative;
+
+  top: 6px;
+}
+
+.Profile{
+  width: 100px;
 
   height: auto;
 
